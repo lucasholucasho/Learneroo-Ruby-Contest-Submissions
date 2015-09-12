@@ -1,0 +1,7 @@
+Post.create("hello")
+Post.create("world")
+puts Post.find(1)
+puts Post.last
+Post.create("potato")
+puts Post.last
+quit

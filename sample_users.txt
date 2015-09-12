@@ -1,0 +1,13 @@
+User.create("jim", "jim@exmaple.com")
+User.create("sam", "sam@example.com")
+puts User.last
+Post.create("first post", 1)
+Post.create("second post", 2)
+Post.create("world", 1)
+puts Post.find(1)
+puts Post.last
+Post.destroy(3)
+puts Post.last
+Post.create("last post", 1)
+puts User.find(1).posts
+quit
